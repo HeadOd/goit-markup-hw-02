@@ -50,7 +50,7 @@ body {
 .list {
     list-style: none;
 }
-
+/* index.html */
 /* header */
 
 /* logo */
@@ -112,7 +112,9 @@ body {
 }
 
 .button:hover,
-.button:focus {
+.button:focus,
+.btn:hover,
+.btn:focus {
     background: var(--button-hover);
 }
 
@@ -163,3 +165,38 @@ body {
 }
 
 /* portfolio.html */
+
+/* btn */
+/* из-за параметров box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+border-radius: 4px;
+решил создать новый клас btn */
+/* :hover и :focus указал вместе с классом button выше */
+.btn {
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+    color: var(--title-text-color);  
+    background: var(--second-bgc);
+}
+
+.btn-active {
+    color: var(--txt-light-cl);
+    background: var(--button-color);
+}
+
+/* title */
+.our-work .title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: var(--title-text-color);
+}
+
+/* p */
+.our-work .paragraph {
+    font-size: 16px;
+    line-height: 1.88;
+}
